@@ -8,7 +8,7 @@ public class BaiTap1 {
         int n = sc.nextInt();
         ArrayList<Integer> a = new ArrayList<>();
         int tong = 0;
-        while(n-- > 0) {
+        while (n-- > 0) {
             int x = sc.nextInt();
             tong += x;
             a.add(x);

@@ -19,7 +19,7 @@ public class Bai1_TangDan_GiamDan {
                 }
             }
             Collections.sort(chan);
-            Collections.sort(le, Collections.reverseOrder());
+            le.sort(Collections.reverseOrder());
             for (int i : chan) System.out.print(i + " ");
             System.out.println();
             for (int i : le) System.out.print(i + " ");

@@ -17,13 +17,13 @@ public class Bai12_SapXepTheoThuTuXuatHien {
                     hm.put(x, hm.get(x) + 1);
                 }
             }
-            Collections.sort(a, new Comparator<Integer>() {
+            a.sort(new Comparator<>() {
                 public int compare(Integer n1, Integer n2) {
                     return hm.get(n2) - hm.get(n1);
                 }
             });
-            for(int i : a) {
-                for(int j = 1; j <= hm.get(i); j++) {
+            for (int i : a) {
+                for (int j = 1; j <= hm.get(i); j++) {
                     System.out.print(i + " ");
                 }
             }

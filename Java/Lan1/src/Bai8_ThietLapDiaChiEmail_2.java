@@ -14,11 +14,10 @@ public class Bai8_ThietLapDiaChiEmail_2 {
 
     public static String chuanHoa2(String s) {
         String[] a = s.trim().split("\\s+");
-        String res = a[a.length - 1];
-        for (int i = 0; i <= a.length - 2; i++) res += a[i].charAt(0);
-        return res;
+        StringBuilder res = new StringBuilder(a[a.length - 1]);
+        for (int i = 0; i <= a.length - 2; i++) res.append(a[i].charAt(0));
+        return res.toString();
     }
-
 
     public static void main(String[] args) throws FileNotFoundException {
         Scanner sc = new Scanner(new File("DANHSACH.in"));
